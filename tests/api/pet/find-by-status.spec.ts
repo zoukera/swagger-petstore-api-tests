@@ -9,7 +9,7 @@ test.describe('GET /pet/findByStatus — Find pets by status', () => {
 
       expect(response.status()).toBe(200);
       const body = await response.json();
-      expect(Array.isArray(body)).toBe(true);
+      expect(Array.isArray(body)).toBe(test);
     });
 
     test('our created pet has status "available" in results @smoke', async ({ withPet, petClient }) => {
